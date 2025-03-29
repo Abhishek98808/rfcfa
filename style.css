@@ -643,6 +643,7 @@ header {
     text-align: center;
     color: white;
     overflow: hidden;
+    background: url("fallback-image.jpg") center/cover no-repeat; /* Fallback image */
 }
 
 .background-video {
@@ -656,7 +657,6 @@ header {
     height: auto;
     object-fit: cover;
     z-index: -1; /* Keep video in the background */
-    background-repeat: no-repeat;
 }
 
 .overlay {
@@ -672,6 +672,7 @@ header {
 .hero-content {
     position: relative;
     z-index: 1;
+    padding: 20px;
 }
 
 h1 {
@@ -694,9 +695,36 @@ p {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
     background-color: #e6b800;
+}
+
+/* 🔹 Responsive Fixes for Mobile */
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh; /* Reduce height for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* 🔹 Hide Video on Small Screens & Use Only Fallback Image */
+@media (max-width: 480px) {
+    .background-video {
+        display: none; /* Hide video */
+    }
 }
