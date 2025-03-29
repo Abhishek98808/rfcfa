@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RFC Football Academy - Professional football training, world-class facilities, and expert coaching to shape future football stars.">
+    <meta name="keywords" content="RFC Football Academy, Football Training, Soccer Coaching, Bangalore Football Academy">
+    <meta name="author" content="RFC Football Academy">
+        
+    <title>RFC Football Academy | Train Like a Pro</title>
+    
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:title" content="RFC Football Academy">
+    <meta property="og:description" content="Train with the best at RFC Football Academy. Join us for top-tier football training and competitions.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://rfcfootballacademy.in">
+    <meta property="og:type" content="website">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Link to Your Main CSS File -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload Fonts for Better Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+    
+    
+<body>
+
+    <header>
+        <div class="logo">RFC Football Academy</div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+        
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted playsinline class="background-video">
+            <source src="images/football-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Welcome to RFC Football Academy</h2>
+            <p>Shaping the future of football</p>
+            <button class="cta-button">Join Us</button>
+        </div>
+    </section>
+
+   
+    
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About RFC Football Academy</h2>
+            <p>RFC Football Academy is dedicated to training aspiring footballers with top-tier coaching and facilities. We focus on skill development, teamwork, and competitive spirit.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <img src="images/training.jpg" alt="Training" loading="lazy">
+                    <h3>Professional Training</h3>
+                    <p>Expert coaches to train players of all skill levels.</p>
+                </div>
+                <div class="about-item">
+                    <img src="images/facilities.jpg" alt="Facilities" loading="lazy">
+                    <h3>World-Class Facilities</h3>
+                    <p>High-quality grounds, fitness centers, and medical support.</p>
+                </div>
+                <div class="about-item">
+                    <img src="images/matches.jpg" alt="Matches" loading="lazy">
+                    <h3>Competitive Matches</h3>
+                    <p>Participate in leagues and tournaments to gain experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider-container">
+            <div class="slide fade">
+                <img src="images/slide1.jpg" alt="Football Training" loading="lazy">
+            </div>
+            <div class="slide fade">
+                <img src="images/slide2.jpg" alt="Match Day" loading="lazy">
+            </div>
+            <div class="slide fade">
+                <img src="images/slide3.jpg" alt="Team Celebration" loading="lazy">
+            </div>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </section>
+
+    <section id="training" class="training">
+        <h2>Our Training Programs</h2>
+        <div class="training-container">
+            <div class="training-card">
+                <img src="images/beginner.jpg" alt="Beginner Training" loading="lazy">
+                <h3>Beginner Level</h3>
+                <p>Perfect for young athletes starting their football journey.</p>
+            </div>
+            <div class="training-card">
+                <img src="images/intermediate.jpg" alt="Intermediate Training" loading="lazy">
+                <h3>Intermediate Level</h3>
+                <p>Focuses on skill development and game strategies.</p>
+            </div>
+            <div class="training-card">
+                <img src="images/advanced.jpg" alt="Advanced Training" loading="lazy">
+                <h3>Advanced Level</h3>
+                <p>High-intensity training for professional-level players.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us!</p>
+        <div class="contact-container">
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>RFC Football Academy</h3>
+                <p><strong>Email:</strong> abhishek.n.an9481@gmail.com</p>
+                <p><strong>Phone:</strong> +91 98808 10148</p>
+                <p><strong>Address:</strong> 4 th cross, road, Devanahalli, Bangaluru, Karnataka 562110</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62141.15678052816!2d77.63465634863279!3d13.236465999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1d389f15a22d%3A0x1394e6f490387b11!2sRFC%20Football%20Academy!5e0!3m2!1sen!2sin!4v1743248473440!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Players & Parents Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial fade">
+                <p>"RFC Football Academy has transformed my skills. The coaches are amazing, and the training sessions are intense and fun!"</p>
+                <h4>– Rahul Sharma, Player</h4>
+            </div>
+            <div class="testimonial fade">
+                <p>"As a parent, I'm glad my son joined RFC. The facilities and professional coaching are outstanding!"</p>
+                <h4>– Meera Patel, Parent</h4>
+            </div>
+            <div class="testimonial fade">
+                <p>"Thanks to RFC Academy, I got the opportunity to play at a higher level. Best decision of my life!"</p>
+                <h4>– Arjun Verma, Player</h4>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>RFC Football Academy</h3>
+            <p>Empowering young athletes with professional training and state-of-the-art facilities. Join us and take your football journey to the next level.</p>
+        </div>
+        <div class="footer-contact">
+            <p><strong>Email:</strong> <a href="abhishek.n.an9481@gmail.com">abhishek.n9481@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919880810148">+91 98808 10148</a></p>
+            <p><strong>Address:</strong> 4 th cross, road, Devanahalli, Bangaluru, Karnataka 562110 </p>
+        </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 RFC Football Academy. All rights reserved.</p>
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsClub",
+        "name": "RFC Football Academy",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123, Football Street",
+            "addressLocality": "Bangalore",
+            "streetAddress": "4 th cross, road, Devanahalli, Bangaluru, Karnataka 562110",
+            "addressLocality": "Bangalore",
+            "addressState":"Karnataka"
+            "addressCountry": "India"
+        },
+        "email": "info@rfcfootballacademy.com",
+        "telephone": "+91 98765 43210",
+        "url": "https://rfcfootballacademy.in"
+    }
+    </script>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
